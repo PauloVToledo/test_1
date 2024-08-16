@@ -14,3 +14,8 @@ def show_name():
         name = request.form["name"]
         return render_template("show_name.html", name=name)
     return redirect("home.html")
+
+
+@app.route("/jaja")
+def jaja():
+    return "<h1>JAJA</h1>"
