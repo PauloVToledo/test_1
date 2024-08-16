@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/main.css')}}"
+    />
+  </head>
+  <body>
+    <h1>Flask and Git</h1>
+    <br />
+    <form action="/happy" method="post">
+      <label for="hello">Write your name</label>
+      <input type="text" name="name" id="hello" placeholder="Name" />
+      <button type="submit">send to server</button>
+    </form>
+  </body>
+</html>
